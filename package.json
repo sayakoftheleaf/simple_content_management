@@ -1,0 +1,24 @@
+{
+  "name": "simple_content_management",
+  "version": "1.0.0",
+  "description": "Simple database content management system",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sayakoftheleaf/simple_content_management.git"
+  },
+  "author": "Sayak Chatterjee",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/sayakoftheleaf/simple_content_management/issues"
+  },
+  "homepage": "https://github.com/sayakoftheleaf/simple_content_management#readme",
+  "dependencies": {
+    "es6-promise": "^4.2.5",
+    "pg": "^7.4.3",
+    "standard": "^12.0.1"
+  }
+}

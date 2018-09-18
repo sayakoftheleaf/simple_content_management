@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <title>New_Project_Information</title>
+  <script src="authentication.js"></script>
+</head>
+
+<!-- TODO: Add back button to return to homescreen -->
+
+<body>
+  <div class="initialWrapper">
+
+    <div class="credentials">
+        <label for="enterName">Enter new Username</label>
+        <input type="text" class="auth" id="enterName">
+    
+        <label for="enterPass"> Enter Password: </label>
+        <input type="password" name="password" id="enterPass" class="auth">
+    
+        <label for="enterPass"> Re-Enter Password: </label>
+        <input type="password" name="password" id="reEnterPass" class="auth">
+
+        <button type="submit" onclick="checkAuthentication()"></button>
+    </div>
+
+  </div>
+
+  <!-- TODO: figure out if this needs to be a link or button -->
+  <div class="forgotPassword">
+    Did you forget your password?
+  </div>
+  <div id="errorLog">
+
+  </div>
+</body>
+</html>

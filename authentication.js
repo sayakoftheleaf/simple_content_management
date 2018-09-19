@@ -2,24 +2,28 @@
 
 
 function checkAuthentication() {
-  var userName = document.getElementById('enterName')
+  var userName = document.getElementById('enterName').value
 
   //TODO:
   // Add a regex to check the userName characters for validity
 
-  var password = document.getElementById('enterPass')
-  var reEntered = document.getElementById('reEnteredPass')
+  var password = document.getElementById("enterPass")
+  var reEntered = document.getElementById("reEnterPass")
 
-  if (password === reEntered) {
+  // console.log(`name - ${userName}, password - ${password}, reEntered - ${reEntered}`)
+
+  if (password.value === reEntered.value) {
     // TODO: check if this can be done this way, because this returns a promise
-    createAuthentication(userName, password)
+     createAuthentication(userName, password)
   } else {
     // If the entered passwords do not match, refresh them
-    password.textContent("")
-    reEntered.textContent("")
+    password.value = ''
+    reEntered.value = ''
+
+    console.log('passwords do not match')
 
     errorLog = document.getElementById("errorLog")
-    errorLog = 'The passwords do not match, please re-enter'
+    // errorLog = 'The passwords do not match, please re-enter'
   }
 }
 
@@ -28,7 +32,7 @@ function createAuthentication(userName, password) {
 
   return new Promise((resolve, reject) => {
     // TODO: connect to database asynchronously
-
+    
   })
 }
 
